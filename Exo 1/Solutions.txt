@@ -1,0 +1,27 @@
+1. /AAA
+2. /AAA/CCC
+3. /AAA/DDD/BBB
+4. //BBB
+5. //DDD/BBB
+6. /AAA/*
+7. ////////!\\\\\\\\\ //BBB[count(ancestor::*)>1] ////////!\\\\\\\\\
+8. ////////!\\\\\\\\\ //BBB[count(ancestor::*)=3] ////////!\\\\\\\\\
+9. //*
+10. /AAA/BBB/*[1]
+11. /AAA/BBB/*[last()]
+12. //*[@id]
+13. //BBB[@id]
+14. //BBB[@id="toto"]
+15. //BBB[@*]
+16. //BBB[not(@*)]
+17. //QQQ[@id='q1']
+18. //*[count(BBB)=2]
+19. //*[count(*)=2]
+20. //*[starts-with(name(),'B')]
+21. //*[contains(name(),'C')]
+22. //*[string-length(name()) = 3]
+23. //BBB | //CCC
+24. ////////!\\\\\\\\\ //BBB/parent::* ////////!\\\\\\\\\
+25. //AAA/DDD | //BBB
+26. //AAA/DDD
+27. 
